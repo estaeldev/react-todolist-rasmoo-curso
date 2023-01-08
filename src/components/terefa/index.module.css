@@ -1,0 +1,47 @@
+.task {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 12px 20px;
+    border-radius: 0 6px 6px 0;
+    border-left: 5px solid var(--secondary);
+    background-color: var(--background-light);
+}
+
+.task.completed {
+    opacity: 0.8;
+}
+
+.task.completed span{
+    text-decoration: line-through;
+}
+
+.task__checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: white;
+}
+
+.task__name {
+    font-size: 18px;
+    margin-right: auto;
+}
+
+.task__button {
+    opacity: 0.7;
+    transition: 0.4s;
+
+    border: 0;
+    color: var(--terciary);
+    background: transparent;
+}
+
+.task__button:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    opacity: 1;
+}
+
+
+
